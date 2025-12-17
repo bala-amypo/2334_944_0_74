@@ -10,11 +10,11 @@ public class NewfileServericeimple implements NewfileService{
     }
     @Override
     public NewfileEntity savedate(NewfileEntity newfile){
-        
+        return rip.save(newfile);
     }
     @Override
     public NewfileEntity getidval(Long id){
-
+        return 
     }
     @Override
     public List<NewfileEntity>getall(){
