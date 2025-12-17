@@ -18,11 +18,11 @@ public class NewfileServericeimple implements NewfileService{
     }
     @Override
     public List<NewfileEntity>getall(){
-
+        return rip.findAll();
     }
     @Override
     public NewfileEntity update(Long id,NewfileEntity newfile){
-        
+        return 
     }
     @Override
     public NewfileEntity delete(long id){
