@@ -14,7 +14,7 @@ public class NewfileServericeimple implements NewfileService{
     }
     @Override
     public NewfileEntity getidval(Long id){
-        return rip.getId(newfile);
+        return rip.findById(id);
     }
     @Override
     public List<NewfileEntity>getall(){
@@ -22,10 +22,10 @@ public class NewfileServericeimple implements NewfileService{
     }
     @Override
     public NewfileEntity update(Long id,NewfileEntity newfile){
-
+        
     }
     @Override
     public NewfileEntity delete(long id){
-
+        rip.delete(id);
     }
 }
