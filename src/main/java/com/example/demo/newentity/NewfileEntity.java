@@ -14,4 +14,12 @@ public class NewfileEntity{
     @NotBlank(message = "Email should not contain space")
     @Email(message="Invaild format")
     private String email;
+    public NewfileEntity(Long id,String name,String email){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+    public NewfileEntity(){
+    }
+
 }
