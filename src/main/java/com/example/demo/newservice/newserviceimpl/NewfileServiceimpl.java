@@ -4,8 +4,10 @@ import com.example.demo.*;
 @Service
 
 public class NewfileServericeimple implements NewfileService{
-    private final NewfileRepo rep;
-    
+    private final NewfileRepo rip;
+    public NewfileServericeimple(NewfileRepo rip){
+        this rip=rip;
+    }
     @Override
     public NewfileEntity savedate(NewfileEntity newfile){
         
