@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Email;
 
 @Entity
+@Table(name="Student")
 public class NewfileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
