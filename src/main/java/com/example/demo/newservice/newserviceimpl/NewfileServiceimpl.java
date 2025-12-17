@@ -14,7 +14,7 @@ public class NewfileServericeimple implements NewfileService{
     }
     @Override
     public NewfileEntity getidval(Long id){
-        return 
+        return rip.getId(newfile);
     }
     @Override
     public List<NewfileEntity>getall(){
