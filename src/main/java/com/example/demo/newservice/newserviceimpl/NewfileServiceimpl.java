@@ -2,7 +2,10 @@ package com.example.demo.newserviceimpl;
 
 import com.example.demo.*;
 @Service
+
 public class NewfileServericeimple implements NewfileService{
+    private final NewfileRepo rep;
+    
     @Override
     public NewfileEntity savedate(NewfileEntity newfile){
         
@@ -16,11 +19,11 @@ public class NewfileServericeimple implements NewfileService{
 
     }
     @Override
-    public NewfileEntity savedate(NewfileEntity newfile){
+    public NewfileEntity update(Long id,NewfileEntity newfile){
 
     }
     @Override
-    public NewfileEntity savedate(NewfileEntity newfile){
+    public NewfileEntity delete(long id){
 
     }
 }
