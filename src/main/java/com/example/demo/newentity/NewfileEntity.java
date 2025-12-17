@@ -1,6 +1,7 @@
 package com.example.demo.newentity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Cloumn;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,6 +15,7 @@ public class NewfileEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message = "Name should not be blank")
+    @Cloumn(unique=true)
     private String name;
     @NotBlank(message = "Email should not be blank")
     @Email(message = "Invalid email format")
